@@ -1,9 +1,13 @@
-# decentralizedDiagnosisForTAC
-This is a repository for the paper "Decentralized Fault Diagnosis of Labeled Petri Nets".
+# Decentralized Fault Diagnosis of Labeled Petri Nets
 
-There are two main files, i.e., ILP.m and BM.m, to perform diagnosis using ILP and basis marking techniques respectively.
+This repository contains the MATLAB implementation for the paper *“Decentralized Fault Diagnosis of Labeled Petri Nets.”*
 
-For numerical example 1, the code to call BM.m is follows.
+To run the MATLAB code, the **Gurobi** solver must be installed and properly integrated into the MATLAB environment.
+
+There are two main files — **ILP.m** and **BM.m** — which perform fault diagnosis using the Integer Linear Programming (ILP) and Basis Marking (BM) techniques, respectively.
+
+For **Numerical Example 1**, the code to call `BM.m` is as follows:
+
 
 O = [
 0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0;
