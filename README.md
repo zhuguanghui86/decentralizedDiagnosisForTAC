@@ -6,7 +6,7 @@ To run the MATLAB code, the **Gurobi** solver must be installed and properly int
 
 There are two main files — **ILP.m** and **BM.m** — which perform fault diagnosis using the Integer Linear Programming (ILP) and Basis Marking (BM) techniques, respectively.
 
-For **Numerical Example 1**, the code to call `BM.m` is as follows:
+For **Numerical Example 1**, the code to call `BM.m` and `ILP.m` is as follows:
 
 
 O = [
@@ -67,3 +67,5 @@ labelfun('g') = {'t14','t15','t17'};
 w = {'a','e', 'a','e','g','a','e','g','a','e','g','a','e','g','a','e','g','a','e','g','a','e','g','g','g','g','g'};
 
 [times] = BM(I, O, S0, Tu, Tf, labelfun, w);
+
+% [times] = ILP(I, O, S0, Tu, Tf, labelfun, w); % call the ILP-based approach
